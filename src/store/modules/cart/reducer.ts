@@ -12,7 +12,7 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
   return produce(state, draft => {    
     switch (action.type) {      
       
-      case ActionType.addProductToCartRequest: {        
+      case ActionType.addProductToCartSuccess: {        
       
         const { product } = action.payload;
       
